@@ -1,0 +1,206 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>MARWADI UNIVERSITY - DEPARTMENT OF COMPUTER ENGINEERING</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        .navbar-nav .nav-link {
+            transition: all 0.2s ease-in-out;
+            border-radius: 6px;
+            padding: 8px 16px !important;
+            margin: 0 4px;
+        }
+        .navbar-nav .nav-link:hover {
+            transform: translateY(-2px) scale(1.08);
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-nav .nav-link:active {
+            transform: translateY(2px) scale(0.95);
+            box-shadow: none;
+        }
+
+        :root {
+            --brand-teal: rgb(0, 174, 193);
+        }
+        .bg-teal {
+            background-color: var(--brand-teal) !important;
+            color: white !important;
+        }
+        .text-teal {
+            color: var(--brand-teal) !important;
+        }
+        .border-teal {
+            border-bottom: 2px solid var(--brand-teal) !important;
+        }
+        .badge-teal {
+            background-color: white !important;
+            color: var(--brand-teal) !important;
+            border: 2px solid var(--brand-teal) !important;
+        }
+        .gallery-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid white;
+        }
+        .card-custom {
+            border: 1px solid rgba(0, 174, 193, 0.2);
+            transition: 0.3s;
+        }
+        .card-custom:hover {
+            box-shadow: 0 8px 16px rgba(0, 174, 193, 0.2) !important;
+        }
+    </style>
+</head> 
+<body class="bg-light"> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-teal sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="https://login.marwadiuniversity.ac.in:553/"><marquee>MARWADI UNIVERSITY</marquee></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#vision">VISION</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#mission">MISSION</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#pso">PROGRAM SPECIFIC OUTCOMES</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#courses">COURSES OFFERED</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#gallery">EVENT GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#recruiters">TOP RECRUITERS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5 shadow" 
+        style="background: linear-gradient(rgba(0, 174, 193, 0.75), rgba(0, 174, 193, 0.75)), 
+        url('C:/Users/ABIN/OneDrive/Desktop/Web Technology/LAB 4/MarwadiUniversity.webp'); 
+        background-size: cover; 
+        background-position: center;"> 
+        
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold text-white">MARWADI UNIVERSITY</h1> 
+            <h2 class="fs-4 mt-3 text-white">DEPARTMENT OF COMPUTER ENGINEERING</h2> 
+        </div>
+    </header>
+
+    <div class="container my-5">
+
+        <div class="row g-4 mb-5 justify-content-center">
+            
+            <div class="col-md-10 col-lg-8">
+                <div class="card shadow-sm card-custom" id="vision">
+                    <div class="card-body">
+                        <h3 class="card-title text-teal border-teal pb-2">VISION</h3>
+                        <p class="card-text mt-3 fw-medium">
+                            To Impart Quality Technical Education Through Research, Innovation And Teamwork For Creating Professionally Superior And Ethically Strong That Meets The Global Challenges Of Engineering Industries And Research Organizations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-lg-8">
+                <div class="card shadow-sm card-custom" id="mission">
+                    <div class="card-body">
+                        <h3 class="card-title text-teal border-teal pb-2">MISSION</h3>
+                        <ul class="list-group list-group-flush mt-3 fw-medium">
+                            <li class="list-group-item bg-transparent">Maintain state-of-the-art ICT enabled teaching and learning methodologies.</li>
+                            <li class="list-group-item bg-transparent">Enable graduates to become digital age literates, innovators, and professionals.</li>
+                            <li class="list-group-item bg-transparent">Provide skills, knowledge, and attitudes for success as engineers, leaders, and entrepreneurs.</li>
+                            <li class="list-group-item bg-transparent">Prepare graduates for lifelong learning and career challenges.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-lg-8">
+                <div class="card shadow-sm card-custom" id="pso">
+                    <div class="card-body">
+                        <h3 class="card-title text-teal border-teal pb-2">PROGRAM SPECIFIC OUTCOMES</h3>
+                        <ol class="list-group list-group-numbered list-group-flush mt-3 fw-medium">
+                            <li class="list-group-item bg-transparent">Apply knowledge and competence in the design and development of computer-based systems addressing industrial and social needs.</li>
+                            <li class="list-group-item bg-transparent">Adapt to emerging technological advancements including cybersecurity, AR/VR, and IoT.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-lg-8">
+                <div class="card shadow-sm card-custom" id="courses">
+                    <div class="card-body">
+                        <h3 class="card-title text-teal border-teal pb-2">COURSES OFFERED</h3>
+                        <ul class="list-group list-group-flush mt-3 fw-bold">
+                            <li class="list-group-item bg-transparent text-teal"> B.Tech In Computer Science Engineering</li>
+                            <li class="list-group-item bg-transparent text-teal"> B.Tech In Computer Science Engineering - AI/ML</li>
+                            <li class="list-group-item bg-transparent text-teal"> B.Tech In Computer Science Engineering - Cyber Security </li>
+                            <li class="list-group-item bg-transparent text-teal"> M.Tech In Computer Engineering</li>
+                            <li class="list-group-item bg-transparent text-teal"> Ph.D. In Computer Science And Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section id="gallery" class="mb-5">
+            <h3 class="text-center text-teal fw-bold mb-4 text-uppercase">EVENT GALLERY</h3>
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-4">
+                    <img src="C:\Users\ABIN\OneDrive\Desktop\Web Technology\LAB 4\MarwadiUniversity.webp" class="shadow gallery-img" alt="Event 1">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="C:\Users\ABIN\OneDrive\Desktop\Web Technology\LAB 4\MarwadiUniversity1.jpg" class="shadow gallery-img" alt="Event 2">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="C:\Users\ABIN\OneDrive\Desktop\Web Technology\LAB 4\MarwadiUniversity2.jpg" class="shadow gallery-img" alt="Event 3">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="C:\Users\ABIN\OneDrive\Desktop\Web Technology\LAB 4\MarwadiUniversity3.jpg" class="shadow gallery-img" alt="Event 4">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="C:\Users\ABIN\OneDrive\Desktop\Web Technology\LAB 4\MarwadiUniversity5.jpg" class="shadow gallery-img" alt="Event 5">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="C:\Users\ABIN\OneDrive\Desktop\Web Technology\LAB 4\MarwadiUniversity6.jpg" class="shadow gallery-img" alt="Event 6">
+                </div>
+                <div class="col-sm-12 col-md-4 mx-auto">
+                    <img src="C:\Users\ABIN\OneDrive\Desktop\Web Technology\LAB 4\MarwadiUniversity4.jpg" class="shadow gallery-img" alt="Event 7">
+                </div>
+            </div>
+        </section>
+
+        <section id="recruiters" class="mb-5">
+            <div class="card shadow-sm card-custom bg-white">
+                <div class="card-body text-center p-4">
+                    <h3 class="card-title text-teal fw-bold mb-4">TOP RECRUITERS</h3>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.amazon.in/" class="text-decoration-none text-teal" target="_blank">AMAZON</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.godrejenterprises.com/" class="text-decoration-none text-teal" target="_blank">GODREJ</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.tcs.com/" class="text-decoration-none text-teal" target="_blank">TCS</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.infosys.com/" class="text-decoration-none text-teal" target="_blank">INFOSYS</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.capgemini.com/" class="text-decoration-none text-teal" target="_blank">CAPGEMINI</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.wipro.com/" class="text-decoration-none text-teal" target="_blank">WIPRO</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.ltimindtree.com/" class="text-decoration-none text-teal" target="_blank">LTIMINDTREE</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.cognizant.com/" class="text-decoration-none text-teal" target="_blank">COGNIZANT</a></span>
+                        <span class="badge rounded-pill badge-teal fs-6 px-4 py-2 fw-bold shadow-sm"><a href="https://www.reliancedigital.in/" class="text-decoration-none text-teal" target="_blank">RELIANCE INDUSTRIES</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-teal text-center py-4 mt-auto"> 
+        <p class="mb-0 text-white fw-medium">&copy; 2026 Marwadi University - Department Of Computer Engineering</p> 
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>
